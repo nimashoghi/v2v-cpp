@@ -1,0 +1,17 @@
+{
+    "dockerFile": "Dockerfile",
+    "runArgs": [
+        // privileged
+        "--privileged",
+        // docker fowrarding
+        "-v",
+        "/var/run/docker.sock:/var/run/docker.sock",
+        // .env file
+        "--env-file",
+        "./.env"
+    ],
+    "extensions": [
+        "ms-vscode.cpptools",
+        "ms-vscode.cmake-tools"
+    ]
+}
